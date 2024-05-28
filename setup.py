@@ -4,7 +4,7 @@ import os
 import sys
 import codecs
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 if sys.version_info < (2, 7):
@@ -59,7 +59,7 @@ setup(
 			"Topic :: Utilities",
 		],
 	
-	packages = ['cinje'],
+	packages = find_packages(),
 	include_package_data = True,
 	package_data = {'': ['README.rst', 'LICENSE.txt']},
 	namespace_packages = [],

@@ -78,9 +78,9 @@ class Module(object):
 		
 		yield Line(0, '')
 		
-		if __debug__:
-			yield Line(0, '__mapping__ = [' + ','.join(str(i) for i in mapping) + ']')
+		#if __debug__:
+		#	yield Line(0, '__mapping__ = [' + ','.join(str(i) for i in mapping) + ']')
 		
-		yield Line(0, '__gzmapping__ = b"' + red(mapping).replace('"', '\"') + '"')
+		#yield Line(0, '__gzmapping__ = b"' + red(mapping).replace('"', '\"') + '"')
 		
 		context.flag.remove('init')
